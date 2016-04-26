@@ -1,0 +1,24 @@
+@mixin clearfixed() {
+	&:after {
+		display: table;
+		content: " ";
+		clear: both;
+	}
+}
+
+@mixin bg-pale-green() {
+	background: $pale-green;
+}
+
+@mixin bg-dark-grey() {
+	background: $dark-grey;
+}
+
+@mixin throw() {
+	// position: absolute;
+	// top: -999em;
+	// left: -999em;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}

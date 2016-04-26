@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.floatR {
+	float: right;
+}
+
+.floatL {
+	float: left;
+}
+
+ul li {list-style-type: none;
+	text-decoration: none;}
+
+img {border: 0;}
+
+body {
+	font-family: $font-copy;
+	font-size: $size-copy;
+	line-height: $height-copy;
+}
+
+a:link, a:visited {
+	list-style-type: none;
+	text-decoration: none;
+	color: $warm-black;
+}
+
+a:hover {
+	color: $warm-black;
+}
+
+a:active {
+	color: $pale-green;
+}
+
+.home {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.hide {
+	display: none;
+}
+
+.throw {
+	position: absolute;
+	left: -999em;
+	top: -999em;
+}
