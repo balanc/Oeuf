@@ -1,3 +1,5 @@
+/* ------------- Begin Global Styles -------------*/
+
 *,
 *:before,
 *:after {
@@ -22,6 +24,7 @@ ul li {list-style-type: none;
 img {border: 0;}
 
 body {
+	@include bg-color();
 	font-family: $font-copy;
 	font-size: $size-copy;
 	line-height: $height-copy;
@@ -41,6 +44,40 @@ a:active {
 	color: $pale-green;
 }
 
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
 .home {
 	width: 960px;
 	margin: 0 auto;
@@ -55,3 +92,5 @@ a:active {
 	left: -999em;
 	top: -999em;
 }
+
+/* ------------- Begin Main Styles -------------*/

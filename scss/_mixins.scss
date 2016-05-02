@@ -6,12 +6,8 @@
 	}
 }
 
-@mixin bg-pale-green() {
+@mixin bg-color() {
 	background: $pale-green;
-}
-
-@mixin bg-dark-grey() {
-	background: $dark-grey;
 }
 
 @mixin throw() {
